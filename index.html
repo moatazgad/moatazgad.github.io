@@ -3,38 +3,241 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name - AI Projects</title>
+<title>Your Name - AI Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-        body {
-            font-family: system-ui, -apple-system, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            line-height: 1.6;
-            color: #333;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        h1 { color: #1a1a2e; }
-        .project { 
-            border-left: 3px solid #4361ee; 
-            padding-left: 1rem; 
-            margin: 1.5rem 0; 
+ 
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #0f0f1a;
+            color: #e0e0e0;
+            line-height: 1.7;
+        }
+ 
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: radial-gradient(ellipse at top, #1a1a3e 0%, #0f0f1a 70%);
+        }
+ 
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+ 
+        .hero h1 span {
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+ 
+        .hero p {
+            font-size: 1.2rem;
+            color: #a0a0b8;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+ 
+        .hero-links a {
+            display: inline-block;
+            margin: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+ 
+        .hero-links a:first-child {
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            color: #fff;
+        }
+ 
+        .hero-links a:last-child {
+            border: 2px solid #6366f1;
+            color: #a855f7;
+        }
+ 
+        .hero-links a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+        }
+ 
+        /* Sections */
+        section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+ 
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #ffffff;
+            position: relative;
+            padding-bottom: 0.75rem;
+        }
+ 
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(135deg, #6366f1, #a855f7);
+            border-radius: 2px;
+        }
+ 
+        /* Project Cards */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+ 
+        .card {
+            background: #1a1a2e;
+            border: 1px solid #2a2a4a;
+            border-radius: 12px;
+            padding: 1.75rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+ 
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #6366f1;
+        }
+ 
+        .card h3 {
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+ 
+        .card p {
+            color: #a0a0b8;
+            font-size: 0.95rem;
+        }
+ 
+        .card .tags {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+ 
+        .card .tag {
+            background: #2a2a4a;
+            color: #a855f7;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+ 
+        /* About */
+        .about-content {
+            color: #a0a0b8;
+            font-size: 1.05rem;
+        }
+ 
+        .about-content p {
+            margin-bottom: 1rem;
+        }
+ 
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #555;
+            font-size: 0.9rem;
+            border-top: 1px solid #1a1a2e;
+        }
+ 
+        footer a {
+            color: #6366f1;
+            text-decoration: none;
+        }
+ 
+        footer a:hover {
+            text-decoration: underline;
         }
 </style>
 </head>
 <body>
-<h1>Hi, I'm [Your Name]</h1>
-<p>I work with AI and here's what I'm building.</p>
  
-    <h2>What I'm Doing</h2>
-<div class="project">
-<h3>Project Name</h3>
-<p>Explain what the project does, what AI tools or models you use, and what you learned.</p>
+    <!-- Hero -->
+<div class="hero">
+<div>
+<h1>Hi, I'm <span>Your Name</span></h1>
+<p>I build things with AI. Here I share what I'm working on, what I've learned, and how I approach problems.</p>
+<div class="hero-links">
+<a href="#projects">See My Work</a>
+<a href="https://github.com/yourusername">GitHub</a>
+</div>
+</div>
 </div>
  
-    <h2>About My Approach</h2>
-<p>Write about your philosophy, workflow, or anything you want visitors to understand about your work.</p>
+    <!-- Projects -->
+<section id="projects">
+<h2>What I'm Building</h2>
+<div class="projects-grid">
+<div class="card">
+<h3>Project One</h3>
+<p>Describe what this project does, the problem it solves, and what makes it interesting.</p>
+<div class="tags">
+<span class="tag">Python</span>
+<span class="tag">LLM</span>
+<span class="tag">RAG</span>
+</div>
+</div>
+<div class="card">
+<h3>Project Two</h3>
+<p>Another project explanation. Keep it short and clear — visitors scan quickly.</p>
+<div class="tags">
+<span class="tag">TypeScript</span>
+<span class="tag">API</span>
+</div>
+</div>
+<div class="card">
+<h3>Project Three</h3>
+<p>What you built, why it matters, and any results or outcomes worth highlighting.</p>
+<div class="tags">
+<span class="tag">Fine-tuning</span>
+<span class="tag">GPT</span>
+</div>
+</div>
+</div>
+</section>
  
-    <h2>Contact</h2>
-<p>Find me on <a href="https://github.com/yourusername">GitHub</a></p>
+    <!-- About -->
+<section id="about">
+<h2>About Me</h2>
+<div class="about-content">
+<p>Write about your background — how you got into AI, what drives you, what you're focused on right now.</p>
+<p>Explain your approach: Do you focus on practical applications? Research? Building tools for others? This helps people understand your perspective.</p>
+<p>Mention what's next — what you're learning, what you plan to build, or what kind of work you're looking for.</p>
+</div>
+</section>
+ 
+    <!-- Footer -->
+<footer>
+<p>Built by Your Name · <a href="https://github.com/yourusername">GitHub</a></p>
+</footer>
+ 
 </body>
 </html>
