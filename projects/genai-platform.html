@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenAI Platform Infrastructure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #ffffff;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 1.5rem 2rem;
+            color: #0ea5e9;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #14b8a6;
+        }
+
+        .project-hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+
+        .project-hero .subtitle {
+            font-size: 1.2rem;
+            color: #555555;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .meta-item .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #999999;
+            font-weight: 600;
+        }
+
+        .meta-item .value {
+            font-size: 1rem;
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .tag {
+            background: #e0f7fa;
+            color: #0e7490;
+            padding: 0.3rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        /* Content Sections */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem;
+        }
+
+        .content section {
+            margin-bottom: 3rem;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0f7fa;
+        }
+
+        .content p {
+            color: #555555;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #555555;
+            font-size: 1.05rem;
+        }
+
+        .content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+            border-radius: 50%;
+        }
+
+        /* Results Grid */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .result-card {
+            background: #f8f9fc;
+            border: 1px solid #e2e4ea;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .result-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .result-card .description {
+            font-size: 0.9rem;
+            color: #555555;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #999999;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e4ea;
+        }
+
+        footer a {
+            color: #0ea5e9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+    <div class="project-hero">
+        <h1>GenAI Platform Infrastructure</h1>
+        <p class="subtitle">Designed and built the DevOps infrastructure for a GenAI platform that reimagines business processes through scalable, reusable AI capabilities.</p>
+
+        <div class="meta">
+            <div class="meta-item">
+                <span class="label">Role</span>
+                <span class="value">DevOps Engineer</span>
+            </div>
+            <div class="meta-item">
+                <span class="label">Type</span>
+                <span class="value">Client Engagement</span>
+            </div>
+            <div class="meta-item">
+                <span class="label">Cloud</span>
+                <span class="value">AWS</span>
+            </div>
+        </div>
+
+        <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">ECS</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">HashiCorp Vault</span>
+            <span class="tag">Artifactory</span>
+            <span class="tag">Bitbucket</span>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <section>
+            <h2>Overview</h2>
+            <p>The client needed to reimagine their business functions using Generative AI. The goal was to build a platform with scalable, reusable GenAI capabilities that could be rapidly deployed and converted into use cases aligned with specific business goals.</p>
+            <p>As the DevOps Engineer, I was responsible for the infrastructure layer — making sure the platform could scale reliably, deploy quickly, and maintain security and uptime across all environments.</p>
+        </section>
+
+        <section>
+            <h2>What I Built</h2>
+            <ul>
+                <li>Infrastructure-as-Code using Terraform for repeatable, version-controlled environments</li>
+                <li>Containerized workloads running on AWS ECS for scalable GenAI services</li>
+                <li>CI/CD pipelines with Jenkins for automated builds, tests, and deployments</li>
+                <li>Secrets management with HashiCorp Vault to secure API keys, credentials, and tokens</li>
+                <li>Artifact management through Artifactory for reliable dependency and image storage</li>
+                <li>Source control and collaboration workflows via Bitbucket</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Results</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="number">Faster</div>
+                    <div class="description">Deployment cycles reduced from hours to minutes</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">99.9%</div>
+                    <div class="description">Environment uptime across all services</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">Reusable</div>
+                    <div class="description">Infrastructure modules shared across multiple AI use cases</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">Secure</div>
+                    <div class="description">Zero secrets exposed with Vault-managed credentials</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Approach</h2>
+            <p>The infrastructure was designed to be modular — each GenAI capability runs as an independent service that can be deployed, scaled, and updated without impacting others. This made it possible for the client's data science teams to ship new AI use cases quickly without worrying about the underlying infrastructure.</p>
+            <p>Everything was codified, versioned, and automated. No manual deployments, no snowflake environments, no guessing what's running where.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p><a href="../index.html">&larr; Back to all projects</a></p>
+    </footer>
+
+</body>
+</html>
