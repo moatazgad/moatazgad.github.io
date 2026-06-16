@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriTech Cloud Infrastructure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #ffffff;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 1.5rem 2rem;
+            color: #0ea5e9;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #14b8a6;
+        }
+
+        .project-hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+
+        .project-hero .subtitle {
+            font-size: 1.2rem;
+            color: #555555;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .meta-item .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #999999;
+            font-weight: 600;
+        }
+
+        .meta-item .value {
+            font-size: 1rem;
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .tag {
+            background: #e0f7fa;
+            color: #0e7490;
+            padding: 0.3rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem;
+        }
+
+        .content section {
+            margin-bottom: 3rem;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0f7fa;
+        }
+
+        .content p {
+            color: #555555;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #555555;
+            font-size: 1.05rem;
+        }
+
+        .content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+            border-radius: 50%;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .result-card {
+            background: #f8f9fc;
+            border: 1px solid #e2e4ea;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .result-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .result-card .description {
+            font-size: 0.9rem;
+            color: #555555;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #999999;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e4ea;
+        }
+
+        footer a {
+            color: #0ea5e9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+    <div class="project-hero">
+        <h1>AgriTech Cloud Infrastructure</h1>
+        <p class="subtitle">Designed deployment pipelines and managed cloud infrastructure for a science-based agriculture company, enabling their teams to deliver data-driven solutions that support sustainable farming at global scale.</p>
+
+        <div class="meta">
+            <div class="meta-item">
+                <span class="label">Role</span>
+                <span class="value">DevOps & Systems Engineer</span>
+            </div>
+            <div class="meta-item">
+                <span class="label">Type</span>
+                <span class="value">Client Engagement</span>
+            </div>
+            <div class="meta-item">
+                <span class="label">Cloud</span>
+                <span class="value">AWS</span>
+            </div>
+        </div>
+
+        <div class="tags">
+            <span class="tag">AWS</span>
+            <span class="tag">ECS</span>
+            <span class="tag">GitLab CI/CD</span>
+            <span class="tag">Terraform</span>
+            <span class="tag">SonarCloud</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Batch Jobs</span>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <section>
+            <h2>Overview</h2>
+            <p>A leading agriculture company leveraging science and data to help farmers grow resilient, healthy crops while promoting sustainable practices. Their engineering teams needed reliable infrastructure and streamlined deployment processes to keep pace with innovation.</p>
+            <p>As the DevOps & Systems Engineer, I owned the deployment lifecycle, server management, and infrastructure-as-code — ensuring the platform could scale and iterate quickly across cross-functional teams.</p>
+        </section>
+
+        <section>
+            <h2>What I Built</h2>
+            <ul>
+                <li>CI/CD pipelines using GitLab CI for automated testing, building, and deploying across environments</li>
+                <li>Integrated SonarCloud into pipelines for continuous code quality analysis — detecting bugs, vulnerabilities, code smells, and enforcing quality gates before code reaches production</li>
+                <li>Artifact management within the pipeline — build artifacts uploaded, versioned, and stored for traceability and rollback capability</li>
+                <li>Containerized workloads on AWS ECS for scalable, managed application hosting</li>
+                <li>Cloud infrastructure designed and provisioned with Terraform — fully codified and repeatable</li>
+                <li>Batch job orchestration for scheduled data processing and computational workloads</li>
+                <li>Linux server management — patching, hardening, and performance tuning</li>
+                <li>Cross-team collaboration workflows to align development and operations processes</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Results</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="number">Automated</div>
+                    <div class="description">End-to-end deployments with zero manual intervention</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">Scalable</div>
+                    <div class="description">Infrastructure that grows with data and user demand</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">Aligned</div>
+                    <div class="description">Dev and ops teams working from a single source of truth</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">Resilient</div>
+                    <div class="description">Batch workloads running reliably on schedule</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Approach</h2>
+            <p>The focus here was removing friction between teams. Developers needed to ship without waiting on ops, and data teams needed batch jobs to run on time without babysitting. GitLab CI handled the pipeline orchestration, ECS managed the runtime, and Terraform kept everything consistent.</p>
+            <p>On the systems side, Linux servers were standardized and hardened — no snowflakes, no surprises. The result was a platform that engineering teams could trust and iterate on independently.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p><a href="../index.html">&larr; Back to all projects</a></p>
+    </footer>
+
+</body>
+</html>
