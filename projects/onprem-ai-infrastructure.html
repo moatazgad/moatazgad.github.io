@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-Prem AI & Automation Infrastructure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #ffffff;
+            color: #333333;
+            line-height: 1.7;
+        }
+
+        .back-link {
+            display: inline-block;
+            padding: 1.5rem 2rem;
+            color: #0ea5e9;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #14b8a6;
+        }
+
+        .project-hero {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+        }
+
+        .project-hero .subtitle {
+            font-size: 1.2rem;
+            color: #555555;
+            max-width: 700px;
+            margin-bottom: 2rem;
+        }
+
+        .meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .meta-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .meta-item .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #999999;
+            font-weight: 600;
+        }
+
+        .meta-item .value {
+            font-size: 1rem;
+            color: #1a1a2e;
+            font-weight: 600;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .tag {
+            background: #e0f7fa;
+            color: #0e7490;
+            padding: 0.3rem 0.85rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem;
+        }
+
+        .content section {
+            margin-bottom: 3rem;
+        }
+
+        .content h2 {
+            font-size: 1.5rem;
+            color: #1a1a2e;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0f7fa;
+        }
+
+        .content p {
+            color: #555555;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .content ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .content ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #555555;
+            font-size: 1.05rem;
+        }
+
+        .content ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+            border-radius: 50%;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .result-card {
+            background: #f8f9fc;
+            border: 1px solid #e2e4ea;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .result-card .number {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #0ea5e9, #14b8a6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .result-card .description {
+            font-size: 0.9rem;
+            color: #555555;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: #999999;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e4ea;
+        }
+
+        footer a {
+            color: #0ea5e9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="../index.html" class="back-link">&larr; Back to Home</a>
+
+    <div class="project-hero">
+        <h1>On-Prem AI & Automation Infrastructure</h1>
+        <p class="subtitle">Deployed LLM models on-premises and automated distributed infrastructure for an intelligent sensing and power solutions company building the future of cleaner energy, smarter mobility, and advanced automation.</p>
+
+        <div class="meta">
+            <div class="meta-item">
+                <span class="label">Role</span>
+                <span class="value">DevOps & Systems Engineer</span>
+            </div>
+            <div class="meta-item">
+                <span class="label">Type</span>
+                <span class="value">Client Engagement</span>
+            </div>
+            <div class="meta-item">
+                <span class="label">Environment</span>
+                <span class="value">On-Premises</span>
+            </div>
+        </div>
+
+        <div class="tags">
+            <span class="tag">Linux</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">Elasticsearch</span>
+            <span class="tag">Kibana</span>
+            <span class="tag">RabbitMQ</span>
+            <span class="tag">LLM</span>
+            <span class="tag">On-Prem</span>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <section>
+            <h2>Overview</h2>
+            <p>The client develops high-performance magnetic sensors and power ICs for next-generation applications in cleaner energy, smarter mobility, and advanced automation. They needed on-premises AI capabilities and robust messaging and observability infrastructure to support internal R&D and production workloads.</p>
+            <p>As the DevOps & Systems Engineer, I was responsible for deploying AI models locally, automating infrastructure provisioning, and ensuring the distributed systems were resilient and production-ready.</p>
+        </section>
+
+        <section>
+            <h2>What I Built</h2>
+            <ul>
+                <li>Deployed and tested LLM models on on-premises Linux servers — enabling local AI inference without cloud dependency</li>
+                <li>Automated the full installation of Elasticsearch, Kibana, and RabbitMQ using Ansible playbooks — repeatable, idempotent, and version-controlled</li>
+                <li>Configured Elasticsearch in a multi-node cluster for high availability, data replication, and search performance</li>
+                <li>Set up RabbitMQ clustering for reliable distributed message queuing across services</li>
+                <li>Built Kibana dashboards for real-time monitoring and log visualization</li>
+                <li>Hardened Linux servers — managing access control, firewall rules, and system-level security</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Results</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <div class="number">On-Prem AI</div>
+                    <div class="description">LLM running locally with zero cloud dependency</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">Automated</div>
+                    <div class="description">Full stack provisioned via Ansible — minutes, not days</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">Clustered</div>
+                    <div class="description">Elasticsearch and RabbitMQ running in HA mode</div>
+                </div>
+                <div class="result-card">
+                    <div class="number">Observable</div>
+                    <div class="description">Full visibility into system health via Kibana</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Approach</h2>
+            <p>This was a purely on-premises engagement — no cloud. Everything had to be automated, repeatable, and maintainable by the internal team after handoff. Ansible was the natural choice for configuration management: playbooks covered the full lifecycle from OS hardening to application clustering.</p>
+            <p>The LLM deployment required testing across different hardware configurations to ensure inference performance met requirements without cloud GPUs. Elasticsearch and RabbitMQ clusters were designed for fault tolerance — if a node goes down, the system keeps running.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p><a href="../index.html">&larr; Back to all projects</a></p>
+    </footer>
+
+</body>
+</html>
