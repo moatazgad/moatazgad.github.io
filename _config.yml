@@ -1,0 +1,41 @@
+title: "Your Name"
+description: "Cloud & Infrastructure Engineer — placeholder tagline"
+url: "" # e.g. https://yourusername.github.io — fill in when deploying
+baseurl: ""
+
+# --- Author / contact placeholders (fill in during editing pass) ---
+author: "Your Name"
+email: "you@example.com"
+github_username: "yourusername"
+linkedin_username: "yourusername"
+
+# --- Collections ---
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# --- Build settings ---
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - README.md

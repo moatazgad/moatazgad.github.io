@@ -1,0 +1,22 @@
+# _data/skills.yml
+#
+# Currently empty — the homepage Skills section will render a tasteful
+# "in progress" empty state until this file has entries.
+#
+# Example structure for future use (uncomment and adapt):
+#
+# - category: "Cloud & Infrastructure"
+#   items:
+#     - "Placeholder Skill One"
+#     - "Placeholder Skill Two"
+#     - "Placeholder Skill Three"
+#
+# - category: "Languages & Tooling"
+#   items:
+#     - "Placeholder Skill One"
+#     - "Placeholder Skill Two"
+#
+# - category: "Platforms"
+#   items:
+#     - "Placeholder Skill One"
+#     - "Placeholder Skill Two"

@@ -1,0 +1,40 @@
+<header class="corner-nav">
+  <a href="{{ '/' | relative_url }}" class="corner-mark" aria-label="{{ site.title }} — home">
+    <!-- Wordmark placeholder: swap for real initials/mark during editing pass -->
+    YN
+  </a>
+
+  <button type="button" class="index-trigger" id="index-trigger" aria-haspopup="dialog" aria-expanded="false" aria-controls="index-overlay">
+    <span class="index-trigger__label">Index</span>
+    <span class="index-trigger__glyph" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </span>
+  </button>
+</header>
+
+<div class="index-overlay" id="index-overlay" role="dialog" aria-modal="true" aria-label="Site index" hidden>
+  <div class="index-overlay__inner">
+    <div class="index-overlay__head">
+      <span class="index-overlay__eyebrow">Site Index</span>
+      <button type="button" class="index-overlay__close" id="index-close" aria-label="Close index">
+        <span aria-hidden="true">Close</span>
+      </button>
+    </div>
+
+    <nav aria-label="Section index">
+      <ol class="index-overlay__list">
+        <li><a href="{{ '/#hero' | relative_url }}" data-index-link><span class="idx-num">01</span><span class="idx-label">Hero</span></a></li>
+        <li><a href="{{ '/#work' | relative_url }}" data-index-link><span class="idx-num">02</span><span class="idx-label">Selected Work</span></a></li>
+        <li><a href="{{ '/#about' | relative_url }}" data-index-link><span class="idx-num">03</span><span class="idx-label">About</span></a></li>
+        <li><a href="{{ '/#skills' | relative_url }}" data-index-link><span class="idx-num">04</span><span class="idx-label">Skills</span></a></li>
+        <li><a href="{{ '/#certifications' | relative_url }}" data-index-link><span class="idx-num">05</span><span class="idx-label">Certifications</span></a></li>
+        <li><a href="{{ '/#contact' | relative_url }}" data-index-link><span class="idx-num">06</span><span class="idx-label">Contact</span></a></li>
+      </ol>
+    </nav>
+
+    <div class="index-overlay__foot">
+      <span>{{ site.title }}</span>
+      <span>{{ site.description }}</span>
+    </div>
+  </div>
+</div>
