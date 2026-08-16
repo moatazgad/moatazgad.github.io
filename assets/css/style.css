@@ -818,9 +818,20 @@ section[data-section],
   transition-delay: 0.9s;
 }
 
+.diagram-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  fill: var(--ink-soft);
+  opacity: 0;
+  transition: opacity 0.4s var(--ease);
+  transition-delay: 0.95s;
+}
+.diagram-svg.is-drawn .diagram-label { opacity: 1; }
+
 @media (prefers-reduced-motion: reduce) {
   .diagram-line { stroke-dashoffset: 0; transition: none; }
   .diagram-node { opacity: 1; transform: scale(1); transition: none; }
+  .diagram-label { opacity: 1; transition: none; }
 }
 
 .project-section {

@@ -11,7 +11,7 @@ tags:
   - "Jenkins"
   - "HashiCorp Vault"
   - "Artifactory"
-diagram: true
+diagram: "shipping-ai-at-production-speed"
 built:
   - "Terraform-based provisioning so every environment could be rebuilt from code, not tribal knowledge"
   - "GenAI services running as ECS-hosted containers, sized and scaled independently of each other"

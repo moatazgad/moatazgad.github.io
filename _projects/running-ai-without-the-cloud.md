@@ -11,7 +11,7 @@ tags:
   - "Kibana"
   - "RabbitMQ"
   - "LLM"
-diagram: true
+diagram: "running-ai-without-the-cloud"
 built:
   - "LLMs deployed and validated directly on on-premises Linux servers, with no cloud dependency"
   - "Ansible playbooks automating the entire Elasticsearch, Kibana, and RabbitMQ install — repeatable and idempotent"

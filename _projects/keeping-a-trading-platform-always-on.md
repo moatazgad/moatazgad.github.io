@@ -11,7 +11,7 @@ tags:
   - "Helm"
   - "Elasticsearch"
   - "Kibana"
-diagram: true
+diagram: "keeping-a-trading-platform-always-on"
 built:
   - "AKS clusters running consistently across dev, test, and production"
   - "Azure DevOps pipelines automating build, test, and release"

@@ -53,28 +53,8 @@ layout: default
 
     {% if page.diagram %}
     <section class="project-diagram reveal" aria-label="System diagram">
-      <svg class="diagram-svg" viewBox="0 0 800 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Abstract line diagram of the system architecture">
-        <g class="diagram-edges" stroke="#2451B4" stroke-width="2" stroke-linecap="round" fill="none">
-          <path class="diagram-line" d="M60 160 L220 80" />
-          <path class="diagram-line" d="M60 160 L220 240" />
-          <path class="diagram-line" d="M220 80 L400 80" />
-          <path class="diagram-line" d="M220 240 L400 240" />
-          <path class="diagram-line" d="M400 80 L400 240" />
-          <path class="diagram-line" d="M400 80 L580 160" />
-          <path class="diagram-line" d="M400 240 L580 160" />
-          <path class="diagram-line" d="M580 160 L740 160" />
-        </g>
-        <g class="diagram-nodes" fill="#14151A">
-          <circle class="diagram-node" cx="60" cy="160" r="7" />
-          <circle class="diagram-node" cx="220" cy="80" r="6" />
-          <circle class="diagram-node" cx="220" cy="240" r="6" />
-          <circle class="diagram-node" cx="400" cy="80" r="6" />
-          <circle class="diagram-node" cx="400" cy="240" r="6" />
-          <circle class="diagram-node" cx="580" cy="160" r="7" fill="#2451B4" />
-          <circle class="diagram-node" cx="740" cy="160" r="7" />
-        </g>
-      </svg>
-      <p class="diagram-caption">Abstract system diagram — illustrative, not a literal architecture reference.</p>
+      {% include diagrams/{{ page.diagram }}.html %}
+      <p class="diagram-caption">Simplified architecture — key components only, not every service shown.</p>
     </section>
     {% endif %}
 

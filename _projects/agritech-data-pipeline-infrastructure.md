@@ -10,7 +10,7 @@ tags:
   - "GitLab CI/CD"
   - "SonarCloud"
   - "Terraform"
-diagram: true
+diagram: "agritech-data-pipeline-infrastructure"
 built:
   - "GitLab CI pipelines handling test, build, and deploy across every environment"
   - "SonarCloud gating every merge on code quality — bugs, vulnerabilities, and code smells caught before production"
