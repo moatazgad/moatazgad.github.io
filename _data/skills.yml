@@ -1,22 +1,71 @@
 # _data/skills.yml
 #
-# Currently empty — the homepage Skills section will render a tasteful
-# "in progress" empty state until this file has entries.
-#
-# Example structure for future use (uncomment and adapt):
-#
-# - category: "Cloud & Infrastructure"
-#   items:
-#     - "Placeholder Skill One"
-#     - "Placeholder Skill Two"
-#     - "Placeholder Skill Three"
-#
-# - category: "Languages & Tooling"
-#   items:
-#     - "Placeholder Skill One"
-#     - "Placeholder Skill Two"
-#
-# - category: "Platforms"
-#   items:
-#     - "Placeholder Skill One"
-#     - "Placeholder Skill Two"
+# Rendered on the homepage as grouped skill categories.
+
+- category: "Operating Systems"
+  items:
+    - "Linux"
+    - "Windows"
+
+- category: "Cloud Computing"
+  items:
+    - "AWS"
+    - "Azure"
+
+- category: "Containerization & Orchestration"
+  items:
+    - "Docker"
+    - "Kubernetes"
+    - "Helm Charts"
+    - "AWS ECS"
+    - "Azure Kubernetes Service (AKS)"
+
+- category: "CI/CD"
+  items:
+    - "Azure DevOps"
+    - "GitLab CI/CD"
+    - "GitHub Actions"
+    - "Jenkins"
+    - "GitOps"
+
+- category: "Infrastructure as Code"
+  items:
+    - "Terraform"
+
+- category: "Configuration Management"
+  items:
+    - "Ansible"
+
+- category: "Scripting & Automation"
+  items:
+    - "Bash"
+
+- category: "Artifact & Registry Management"
+  items:
+    - "JFrog Artifactory"
+    - "Azure Container Registry (ACR)"
+    - "AWS Elastic Container Registry (ECR)"
+
+- category: "Networking & Security"
+  items:
+    - "AWS Elastic Load Balancer (ELB)"
+    - "Cloud Networking (VPC, Security Groups)"
+    - "IAM (Identity & Access Management)"
+
+- category: "Source Code Management"
+  items:
+    - "Git"
+
+- category: "Observability & Logging"
+  items:
+    - "Elasticsearch"
+    - "Kibana"
+    - "Logstash"
+
+- category: "Databases"
+  items:
+    - "MongoDB"
+
+- category: "FinOps & Cost Optimization"
+  items:
+    - "Cloud Cost Optimization"

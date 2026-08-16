@@ -1,18 +1,32 @@
 # _data/certifications.yml
 #
-# Currently empty — the homepage Certifications section will render a
-# tasteful "in progress" empty state until this file has entries.
-#
-# Example structure for future use (uncomment and adapt).
-# `monogram` should be a short 2-4 character string rendered inside a plain
-# bordered badge (no brand-colored gradient icons per the design system).
-#
-# - name: "Placeholder Certification Name"
-#   issuer: "Placeholder Issuer"
-#   monogram: "PC"
-#   year: "2024"
-#
-# - name: "Another Placeholder Certification"
-#   issuer: "Placeholder Issuer"
-#   monogram: "AP"
-#   year: "2023"
+# Rendered on the homepage as bordered monogram badges, newest first.
+
+- name: "FinOps Certified Practitioner"
+  issuer: "FinOps Foundation"
+  monogram: "FO"
+  year: "2026"
+
+- name: "Certified in Cybersecurity (CC)"
+  issuer: "ISC2"
+  monogram: "CC"
+  year: "2025"
+
+- name: "AWS Certified AI Practitioner (AIF-C01)"
+  issuer: "Amazon Web Services"
+  monogram: "AWS"
+  year: "2025"
+
+- name: "AWS Certified Security – Specialty (SCS-C02)"
+  issuer: "Amazon Web Services"
+  monogram: "AWS"
+  year: "2024"
+
+- name: "AWS Certified Solutions Architect – Associate (SAA-C03)"
+  issuer: "Amazon Web Services"
+  monogram: "AWS"
+  year: "2024"
+
+- name: "AWS Certified Cloud Practitioner (CLF-C01)"
+  issuer: "Amazon Web Services"
+  monogram: "AWS"
