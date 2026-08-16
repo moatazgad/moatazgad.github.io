@@ -15,29 +15,16 @@ layout: default
 
 <section id="hero" class="hero" data-section>
   <div class="hero__inner reveal">
-    <span class="eyebrow">Portfolio — Placeholder</span>
+    <span class="eyebrow">Portfolio</span>
     <h1 class="hero__title">
-      <span class="hero__title-line">Your Name</span>
-      <span class="hero__title-line hero__title-line--italic">building considered systems.</span>
+      <span class="hero__title-line">Moataz Gad</span>
+      <span class="hero__title-line hero__title-line--italic">building infrastructure that holds up.</span>
     </h1>
     <p class="hero__tagline">
-      Cloud &amp; Infrastructure Engineer — placeholder tagline. Replace this
-      paragraph with a short, specific statement of what you do and for whom.
+      Cloud &amp; DevOps engineer working across AWS and Azure — CI/CD
+      pipelines, Kubernetes and ECS at scale, and infrastructure-as-code
+      built to be reliable, observable, and easy to hand off.
     </p>
-    <div class="hero__stats">
-      <div class="stat-callout">
-        <span class="stat-callout__num" data-counter data-target="XX">XX</span>
-        <span class="stat-callout__desc">Placeholder metric label</span>
-      </div>
-      <div class="stat-callout">
-        <span class="stat-callout__num" data-counter data-target="XX+">XX+</span>
-        <span class="stat-callout__desc">Placeholder metric label</span>
-      </div>
-      <div class="stat-callout">
-        <span class="stat-callout__num" data-counter data-target="X">X</span>
-        <span class="stat-callout__desc">Placeholder metric label</span>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -81,13 +68,25 @@ layout: default
     <h2>About</h2>
   </div>
   <div class="about__body reveal">
-    <p class="placeholder-note">[Placeholder — replace with real bio during editing pass]</p>
     <p>
-      This paragraph is a generic placeholder for a short professional
-      biography. It should describe background, areas of focus, and what
-      kind of problems are interesting to work on — written in first
-      person once real content is available. Nothing here should be
-      mistaken for factual biographical detail.
+      I'm a Cloud &amp; DevOps engineer who works across AWS and Azure,
+      building the CI/CD pipelines, container platforms, and
+      infrastructure-as-code that let teams ship reliably. Day to day that
+      means owning Kubernetes and ECS workloads in production, architecting
+      cloud environments with Terraform, and building CI/CD strategy across
+      Jenkins, Azure DevOps, and GitLab CI — usually across multiple
+      environments and teams at once.
+    </p>
+    <p>
+      I care as much about what happens after deployment as before it: I
+      design logging and observability strategy with the ELK stack —
+      sharding, ILM policies, index templating — so teams can actually see
+      what their systems are doing. I've also managed artifact repositories
+      and Helm chart lifecycles across multi-cluster environments, working
+      closely with cross-functional teams to keep delivery and
+      infrastructure moving together. The common thread is making
+      infrastructure boring in the best sense: predictable, observable, and
+      easy to hand off.
     </p>
   </div>
 </section>
@@ -149,11 +148,11 @@ layout: default
     <h2>Contact</h2>
   </div>
   <div class="contact__body reveal">
-    <p>Placeholder invitation to get in touch — replace with real copy.</p>
+    <p>Open to cloud &amp; DevOps roles and interesting infrastructure problems — reach out.</p>
     <ul class="contact-links">
-      <li><a href="#">Email <span aria-hidden="true">&rarr;</span></a></li>
-      <li><a href="#">GitHub <span aria-hidden="true">&rarr;</span></a></li>
-      <li><a href="#">LinkedIn <span aria-hidden="true">&rarr;</span></a></li>
+      <li><a href="mailto:{{ site.email }}">Email <span aria-hidden="true">&rarr;</span></a></li>
+      <li><a href="https://github.com/{{ site.github_username }}/" target="_blank" rel="noopener">GitHub <span aria-hidden="true">&rarr;</span></a></li>
+      <li><a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">&rarr;</span></a></li>
     </ul>
   </div>
 </section>

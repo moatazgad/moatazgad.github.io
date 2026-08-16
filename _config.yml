@@ -1,13 +1,13 @@
-title: "Your Name"
-description: "Cloud & Infrastructure Engineer — placeholder tagline"
-url: "" # e.g. https://yourusername.github.io — fill in when deploying
+title: "Moataz Gad"
+description: "Cloud & DevOps engineer building reliable infrastructure across AWS and Azure."
+url: "https://moatazgad.github.io"
 baseurl: ""
 
-# --- Author / contact placeholders (fill in during editing pass) ---
-author: "Your Name"
-email: "you@example.com"
-github_username: "yourusername"
-linkedin_username: "yourusername"
+# --- Author / contact ---
+author: "Moataz Gad"
+email: "moatazgaad7@gmail.com"
+github_username: "moatazgad"
+linkedin_username: "moataz-gad-250743183"
 
 # --- Collections ---
 collections:
