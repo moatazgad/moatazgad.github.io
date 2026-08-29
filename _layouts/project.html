@@ -10,9 +10,9 @@ layout: default
   <nav class="project-rail" aria-label="Case study sections">
     <ol>
       <li><a href="#overview" data-rail-link><span class="rail-num">01</span><span class="rail-label">Overview</span></a></li>
-      <li><a href="#what-was-built" data-rail-link><span class="rail-num">02</span><span class="rail-label">What I Built</span></a></li>
-      <li><a href="#approach" data-rail-link><span class="rail-num">03</span><span class="rail-label">Approach</span></a></li>
-      <li><a href="#results" data-rail-link><span class="rail-num">04</span><span class="rail-label">Results</span></a></li>
+      {% if page.built %}<li><a href="#what-was-built" data-rail-link><span class="rail-num">02</span><span class="rail-label">What I Built</span></a></li>{% endif %}
+      {% if page.approach %}<li><a href="#approach" data-rail-link><span class="rail-num">03</span><span class="rail-label">Approach</span></a></li>{% endif %}
+      {% if page.results %}<li><a href="#results" data-rail-link><span class="rail-num">04</span><span class="rail-label">Results</span></a></li>{% endif %}
     </ol>
   </nav>
 

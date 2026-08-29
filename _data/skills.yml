@@ -2,9 +2,10 @@
 #
 # Rendered on the homepage as grouped skill categories.
 
-- category: "Operating Systems"
+- category: "Operating Systems & Virtualization"
   items:
-    - "Linux"
+    - "Linux (RHEL, Ubuntu)"
+    - "VMware vSphere / ESXi"
     - "Windows"
 
 - category: "Cloud Computing"
@@ -20,12 +21,12 @@
     - "AWS ECS"
     - "Azure Kubernetes Service (AKS)"
 
-- category: "CI/CD"
+- category: "CI/CD & GitOps"
   items:
     - "Azure DevOps"
     - "GitLab CI/CD"
-    - "GitHub Actions"
     - "Jenkins"
+    - "Argo CD"
     - "GitOps"
 
 - category: "Infrastructure as Code"
@@ -39,12 +40,18 @@
 - category: "Scripting & Automation"
   items:
     - "Bash"
+    - "Python (basic)"
 
 - category: "Artifact & Registry Management"
   items:
     - "JFrog Artifactory"
     - "Azure Container Registry (ACR)"
     - "AWS Elastic Container Registry (ECR)"
+
+- category: "Secrets & Code Quality"
+  items:
+    - "HashiCorp Vault"
+    - "SonarCloud"
 
 - category: "Networking & Security"
   items:
@@ -61,9 +68,11 @@
     - "Elasticsearch"
     - "Kibana"
     - "Logstash"
+    - "Amazon CloudWatch"
 
-- category: "Databases"
+- category: "Messaging & Data"
   items:
+    - "RabbitMQ"
     - "MongoDB"
 
 - category: "FinOps & Cost Optimization"

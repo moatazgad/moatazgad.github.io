@@ -1,5 +1,6 @@
 title: "Moataz Gad"
-description: "Cloud & DevOps engineer building reliable infrastructure across AWS and Azure."
+tagline: "Senior Cloud & DevOps Engineer — AWS & Azure"
+description: "Senior cloud & DevOps engineer with five years across AWS and Azure — Kubernetes, Terraform, CI/CD, and observability built to be reliable and easy to hand off."
 url: "https://moatazgad.github.io"
 baseurl: ""
 
@@ -8,6 +9,15 @@ author: "Moataz Gad"
 email: "moatazgaad7@gmail.com"
 github_username: "moatazgad"
 linkedin_username: "moataz-gad-250743183"
+
+# --- SEO / social (jekyll-seo-tag) ---
+twitter:
+  card: summary
+social:
+  name: "Moataz Gad"
+  links:
+    - "https://github.com/moatazgad"
+    - "https://www.linkedin.com/in/moataz-gad-250743183"
 
 # --- Collections ---
 collections:

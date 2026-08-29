@@ -21,8 +21,8 @@ layout: default
       <span class="hero__title-line hero__title-line--italic">building infrastructure that holds up.</span>
     </h1>
     <p class="hero__tagline">
-      Cloud &amp; DevOps engineer working across AWS and Azure — CI/CD
-      pipelines, Kubernetes and ECS at scale, and infrastructure-as-code
+      Senior cloud &amp; DevOps engineer, five years across AWS and Azure —
+      CI/CD pipelines, Kubernetes and ECS at scale, and infrastructure-as-code
       built to be reliable, observable, and easy to hand off.
     </p>
   </div>
@@ -34,7 +34,7 @@ layout: default
     <h2>Systems I've Built</h2>
   </div>
 
-  {% assign projects = site.projects | sort: 'title' %}
+  {% assign projects = site.projects | sort: 'order' %}
   {% if projects.size > 0 %}
   <div class="work-list">
     {% for project in projects %}
@@ -60,6 +60,24 @@ layout: default
     <p>Case studies in progress. Check back soon.</p>
   </div>
   {% endif %}
+
+  <div class="also-built reveal">
+    <p class="also-built__label">Also built</p>
+    <h3 class="also-built__title">Offline Face-Recognition Access Control</h3>
+    <p class="also-built__desc">
+      A hackathon build — a facial-recognition door-access system running
+      entirely on edge hardware: sub-500&#8239;ms recognition, blink-based
+      liveness detection to defeat photo spoofing, and a full photo audit
+      trail. No cloud, no API costs, nothing leaving the device.
+    </p>
+    <ul class="tag-list">
+      <li class="tag">face-api.js</li>
+      <li class="tag">TensorFlow.js</li>
+      <li class="tag">Node.js</li>
+      <li class="tag">SQLite</li>
+      <li class="tag">Raspberry Pi</li>
+    </ul>
+  </div>
 </section>
 
 <section id="about" class="about" data-section>
