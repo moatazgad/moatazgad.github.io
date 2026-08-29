@@ -53,7 +53,9 @@ layout: default
 
     {% if page.diagram %}
     <section class="project-diagram reveal" aria-label="System diagram">
-      {% include diagrams/{{ page.diagram }}.html %}
+      <div class="diagram-frame">
+        {% include diagrams/{{ page.diagram }}.html %}
+      </div>
       <p class="diagram-caption">Simplified architecture — key components only, not every service shown.</p>
     </section>
     {% endif %}

@@ -1,30 +1,41 @@
-<svg class="diagram-svg" viewBox="0 0 800 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram: Bitbucket triggers Jenkins, which fans out to Artifactory, Terraform, and Vault, converging on ECS, ending at Production">
-  <g class="diagram-edges" stroke="#2451B4" stroke-width="2" stroke-linecap="round" fill="none">
-    <path class="diagram-line" d="M60 160 L230 160" style="stroke-dasharray:170;stroke-dashoffset:170" />
-    <path class="diagram-line" d="M230 160 L410 70" style="stroke-dasharray:201;stroke-dashoffset:201" />
-    <path class="diagram-line" d="M230 160 L410 160" style="stroke-dasharray:180;stroke-dashoffset:180" />
-    <path class="diagram-line" d="M230 160 L410 250" style="stroke-dasharray:201;stroke-dashoffset:201" />
-    <path class="diagram-line" d="M410 70 L590 160" style="stroke-dasharray:201;stroke-dashoffset:201" />
-    <path class="diagram-line" d="M410 160 L590 160" style="stroke-dasharray:180;stroke-dashoffset:180" />
-    <path class="diagram-line" d="M410 250 L590 160" style="stroke-dasharray:201;stroke-dashoffset:201" />
-    <path class="diagram-line" d="M590 160 L740 160" style="stroke-dasharray:150;stroke-dashoffset:150" />
-  </g>
-  <g class="diagram-nodes" fill="#14151A">
-    <circle class="diagram-node" cx="60" cy="160" r="7" />
-    <circle class="diagram-node" cx="230" cy="160" r="6" />
-    <circle class="diagram-node" cx="410" cy="70" r="6" />
-    <circle class="diagram-node" cx="410" cy="160" r="6" />
-    <circle class="diagram-node" cx="410" cy="250" r="6" />
-    <circle class="diagram-node" cx="590" cy="160" r="7" fill="#2451B4" />
-    <circle class="diagram-node" cx="740" cy="160" r="7" />
-  </g>
-  <g class="diagram-labels" text-anchor="middle">
-    <text class="diagram-label" x="60" y="184">Bitbucket</text>
-    <text class="diagram-label" x="230" y="184">Jenkins</text>
-    <text class="diagram-label" x="410" y="52">Artifactory</text>
-    <text class="diagram-label" x="410" y="184">Terraform</text>
-    <text class="diagram-label" x="410" y="274">Vault</text>
-    <text class="diagram-label" x="590" y="184">ECS</text>
-    <text class="diagram-label" x="740" y="184">Production</text>
-  </g>
+<svg class="diagram-svg" viewBox="0 0 920 300" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="Bitbucket triggers a Jenkins multibranch pipeline that fans out to Terraform, Vault, and Artifactory, converging on ECS and ending at Production.">
+  <defs>
+    <marker id="dg-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7.5" markerHeight="7.5" orient="auto">
+      <path class="dg-arrow" d="M0,0 L8,4 L0,8 z" />
+    </marker>
+  </defs>
+
+  <!-- edges -->
+  <path class="dg-edge" d="M162,150 L193,150" />
+  <path class="dg-edge" d="M337,150 L373,82" />
+  <path class="dg-edge" d="M337,150 L373,150" />
+  <path class="dg-edge" d="M337,150 L373,218" />
+  <path class="dg-edge" d="M527,82 L575,150" />
+  <path class="dg-edge" d="M527,150 L575,150" />
+  <path class="dg-edge" d="M527,218 L575,150" />
+  <path class="dg-edge" d="M717,150 L751,150" />
+
+  <!-- nodes -->
+  <rect class="dg-node" x="22" y="126" width="140" height="48" rx="4" />
+  <text class="dg-node-label" x="92" y="150" text-anchor="middle" dominant-baseline="central">Bitbucket</text>
+
+  <rect class="dg-node" x="195" y="126" width="142" height="48" rx="4" />
+  <text class="dg-node-label" x="266" y="143" text-anchor="middle" dominant-baseline="central">Jenkins</text>
+  <text class="dg-node-sub" x="266" y="161" text-anchor="middle" dominant-baseline="central">multibranch</text>
+
+  <rect class="dg-node" x="375" y="60" width="152" height="44" rx="4" />
+  <text class="dg-node-label" x="451" y="82" text-anchor="middle" dominant-baseline="central">Terraform</text>
+
+  <rect class="dg-node" x="375" y="128" width="152" height="44" rx="4" />
+  <text class="dg-node-label" x="451" y="150" text-anchor="middle" dominant-baseline="central">Vault</text>
+
+  <rect class="dg-node" x="375" y="196" width="152" height="44" rx="4" />
+  <text class="dg-node-label" x="451" y="218" text-anchor="middle" dominant-baseline="central">Artifactory</text>
+
+  <rect class="dg-node" x="577" y="126" width="140" height="48" rx="4" />
+  <text class="dg-node-label" x="647" y="150" text-anchor="middle" dominant-baseline="central">ECS</text>
+
+  <rect class="dg-node dg-node--out" x="753" y="126" width="145" height="48" rx="4" />
+  <text class="dg-node-label dg-node-label--out" x="825" y="150" text-anchor="middle" dominant-baseline="central">Production</text>
 </svg>

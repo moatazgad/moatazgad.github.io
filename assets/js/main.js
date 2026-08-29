@@ -14,6 +14,42 @@
   var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ------------------------------------------------------------------ *
+   * Theme toggle — persists to localStorage, falls back to system.
+   * The pre-paint <head> script applies a stored choice before first
+   * paint; this only wires the button.
+   * ------------------------------------------------------------------ */
+  (function initThemeToggle() {
+    var btn = document.getElementById("theme-toggle");
+    if (!btn) return;
+    var root = document.documentElement;
+    var systemDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function currentTheme() {
+      return root.getAttribute("data-theme") || (systemDark.matches ? "dark" : "light");
+    }
+    function apply(theme) {
+      root.setAttribute("data-theme", theme);
+      try { localStorage.setItem("theme", theme); } catch (e) {}
+      btn.setAttribute("aria-pressed", String(theme === "dark"));
+    }
+
+    btn.setAttribute("aria-pressed", String(currentTheme() === "dark"));
+    btn.addEventListener("click", function () {
+      apply(currentTheme() === "dark" ? "light" : "dark");
+    });
+
+    // If the user hasn't made an explicit choice, track system changes live.
+    systemDark.addEventListener("change", function () {
+      var stored;
+      try { stored = localStorage.getItem("theme"); } catch (e) {}
+      if (stored !== "dark" && stored !== "light") {
+        root.removeAttribute("data-theme");
+        btn.setAttribute("aria-pressed", String(systemDark.matches));
+      }
+    });
+  })();
+
+  /* ------------------------------------------------------------------ *
    * Index overlay
    * ------------------------------------------------------------------ */
   (function initIndexOverlay() {
