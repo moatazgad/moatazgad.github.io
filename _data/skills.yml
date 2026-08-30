@@ -2,11 +2,15 @@
 #
 # Rendered on the homepage as grouped skill categories.
 
-- category: "Operating Systems & Virtualization"
+- category: "Linux & Systems"
   items:
-    - "Linux (RHEL, Ubuntu)"
+    - "Linux administration (RHEL, Ubuntu)"
+    - "systemd, networking, storage"
+    - "Performance tuning"
+    - "Patching & hardening"
     - "VMware vSphere / ESXi"
-    - "Windows"
+    - "Red Hat Virtualization (RHV)"
+    - "GPU compute (CUDA)"
 
 - category: "Cloud Computing"
   items:
@@ -32,6 +36,7 @@
 - category: "Infrastructure as Code"
   items:
     - "Terraform"
+    - "Terraform Cloud"
 
 - category: "Configuration Management"
   items:
