@@ -929,7 +929,6 @@ section[data-section],
 .site-footer__links { display: flex; gap: 1.5rem; }
 .site-footer__links a { transition: color var(--dur-fast) var(--ease); }
 .site-footer__links a:hover { color: var(--accent); }
-.site-footer__colophon { margin: 0; max-width: 48ch; }
 .site-footer__meta { margin: 0; }
 
 /* ==========================================================================
