@@ -1232,6 +1232,11 @@ section[data-section],
 /* Also-built block */
 .also-built__label { color: var(--fg-mute); }
 .also-built__desc { color: var(--fg-soft); }
+.also-built__item + .also-built__item {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--hairline);
+}
 
 /* Project sections */
 .project-section { border-bottom: 1px solid var(--hairline); }

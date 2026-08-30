@@ -1,0 +1,46 @@
+<svg class="diagram-svg" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="NGINX Plus fronts an API gateway that routes to an API cluster and an ESB cluster; both feed an Elasticsearch cluster run by the ECK operator, which surfaces in Kibana and is snapshotted to blob storage.">
+  <defs>
+    <marker id="dg-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7.5" markerHeight="7.5" orient="auto">
+      <path class="dg-arrow" d="M0,0 L8,4 L0,8 z" />
+    </marker>
+  </defs>
+
+  <!-- edges -->
+  <path class="dg-edge" d="M152,150 L186,150" />
+  <path class="dg-edge" d="M332,150 L386,98" />
+  <path class="dg-edge" d="M332,150 L386,218" />
+  <path class="dg-edge" d="M542,98 L586,142" />
+  <path class="dg-edge" d="M542,218 L586,160" />
+  <path class="dg-edge" d="M762,140 L796,96" />
+  <path class="dg-edge" d="M762,162 L796,206" />
+
+  <!-- cluster boundaries -->
+  <rect class="dg-group" x="372" y="46" width="178" height="96" rx="8" />
+  <text class="dg-group-label" x="388" y="66">API cluster</text>
+  <rect class="dg-group" x="372" y="168" width="178" height="96" rx="8" />
+  <text class="dg-group-label" x="388" y="188">ESB cluster</text>
+
+  <!-- nodes -->
+  <rect class="dg-node" x="22" y="128" width="130" height="44" rx="4" />
+  <text class="dg-node-label" x="87" y="150" text-anchor="middle" dominant-baseline="central">NGINX Plus</text>
+
+  <rect class="dg-node" x="192" y="128" width="140" height="44" rx="4" />
+  <text class="dg-node-label" x="262" y="150" text-anchor="middle" dominant-baseline="central">API gateway</text>
+
+  <rect class="dg-node" x="390" y="78" width="150" height="40" rx="4" />
+  <text class="dg-node-label" x="465" y="98" text-anchor="middle" dominant-baseline="central">Services</text>
+
+  <rect class="dg-node" x="390" y="198" width="150" height="40" rx="4" />
+  <text class="dg-node-label" x="465" y="218" text-anchor="middle" dominant-baseline="central">Integration apps</text>
+
+  <rect class="dg-node dg-node--out" x="590" y="124" width="172" height="52" rx="4" />
+  <text class="dg-node-label dg-node-label--out" x="676" y="144" text-anchor="middle" dominant-baseline="central">Elasticsearch</text>
+  <text class="dg-node-sub dg-node-sub--out" x="676" y="162" text-anchor="middle" dominant-baseline="central">ECK operator</text>
+
+  <rect class="dg-node" x="800" y="74" width="140" height="40" rx="4" />
+  <text class="dg-node-label" x="870" y="94" text-anchor="middle" dominant-baseline="central">Kibana</text>
+
+  <rect class="dg-node" x="800" y="186" width="172" height="40" rx="4" />
+  <text class="dg-node-label" x="886" y="206" text-anchor="middle" dominant-baseline="central">Blob snapshots</text>
+</svg>

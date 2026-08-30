@@ -1,0 +1,37 @@
+<svg class="diagram-svg" viewBox="0 0 760 300" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="GitLab CI triggers Terraform Cloud, a workspace per stack, which provisions the non-prod and prod AWS accounts (ECS Fargate, Lambda with SQS and DynamoDB, and RDS Oracle); production changes go through ServiceNow change control.">
+  <defs>
+    <marker id="dg-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="7.5" markerHeight="7.5" orient="auto">
+      <path class="dg-arrow" d="M0,0 L8,4 L0,8 z" />
+    </marker>
+  </defs>
+
+  <!-- edges -->
+  <path class="dg-edge" d="M150,98 L181,98" />
+  <path class="dg-edge" d="M345,98 L406,110" />
+  <path class="dg-edge" d="M345,222 L406,200" />
+
+  <!-- AWS accounts boundary -->
+  <rect class="dg-group" x="410" y="34" width="250" height="232" rx="8" />
+  <text class="dg-group-label" x="426" y="54">AWS · non-prod &amp; prod</text>
+
+  <!-- nodes -->
+  <rect class="dg-node" x="20" y="76" width="130" height="44" rx="4" />
+  <text class="dg-node-label" x="85" y="98" text-anchor="middle" dominant-baseline="central">GitLab CI</text>
+
+  <rect class="dg-node" x="185" y="72" width="160" height="52" rx="4" />
+  <text class="dg-node-label" x="265" y="91" text-anchor="middle" dominant-baseline="central">Terraform Cloud</text>
+  <text class="dg-node-sub" x="265" y="109" text-anchor="middle" dominant-baseline="central">workspace per stack</text>
+
+  <rect class="dg-node" x="185" y="200" width="160" height="44" rx="4" />
+  <text class="dg-node-label" x="265" y="222" text-anchor="middle" dominant-baseline="central">ServiceNow</text>
+
+  <rect class="dg-node" x="438" y="70" width="194" height="40" rx="4" />
+  <text class="dg-node-label" x="535" y="90" text-anchor="middle" dominant-baseline="central">ECS Fargate</text>
+
+  <rect class="dg-node" x="438" y="128" width="194" height="40" rx="4" />
+  <text class="dg-node-label" x="535" y="148" text-anchor="middle" dominant-baseline="central">Lambda · SQS · DynamoDB</text>
+
+  <rect class="dg-node dg-node--out" x="438" y="186" width="194" height="40" rx="4" />
+  <text class="dg-node-label dg-node-label--out" x="535" y="206" text-anchor="middle" dominant-baseline="central">RDS · Oracle</text>
+</svg>
