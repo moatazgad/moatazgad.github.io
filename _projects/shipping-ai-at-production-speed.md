@@ -1,6 +1,6 @@
 ---
 title: "Shipping AI at Production Speed"
-subtitle: "AWS infrastructure and CI/CD built so new GenAI capabilities could go from idea to production without each one becoming its own infrastructure project."
+subtitle: "AWS infrastructure, a data-lake layer, and CI/CD built so new GenAI capabilities could go from idea to production without each one becoming its own infrastructure project."
 role: "DevOps Engineer"
 type: "Client Engagement"
 cloud: "AWS"
@@ -9,13 +9,15 @@ tags:
   - "AWS"
   - "Terraform"
   - "ECS"
+  - "AWS Glue"
+  - "Athena"
   - "Jenkins"
   - "HashiCorp Vault"
-  - "Artifactory"
 diagram: "shipping-ai-at-production-speed"
 built:
   - "Terraform provisioning for every environment, with existing hand-created resources imported into state and a sprawling root configuration refactored into reusable modules"
   - "GenAI services running as ECS-hosted containers, sized and scaled independently of each other"
+  - "A data-lake layer, all in Terraform — Glue Data Catalog databases and Glue Spark ETL jobs over an S3 raw / schema / consumables zone structure, with Athena querying the curated zone"
   - "Jenkins multibranch pipelines automating build, test, and deploy across every environment"
   - "A dedicated repository and pipeline for Lambda code — closing the last place changes were still made by hand in the console"
   - "Vault-managed secrets so API keys and credentials never sat in plaintext config"
@@ -37,6 +39,12 @@ approach: |
   application code, not a separate manual one. Lambda functions had been the common exception —
   edited directly in the console — so that code moved into its own repository with a multibranch
   Jenkins pipeline, version-controlled and deployed automatically like everything else.
+
+  Underneath the services sits a data-lake layer, also all in Terraform: a set of Glue Data
+  Catalog databases, Glue Spark ETL jobs whose scripts live in S3, and an S3 zone structure —
+  raw, schema, consumables. Jobs run on an EventBridge schedule or on an S3-event trigger that
+  fires a Lambda to start the ETL, converting raw inputs into the curated shapes downstream
+  services query through Athena.
 results:
   - stat: "40+"
     description: "containerized services across the platform"
